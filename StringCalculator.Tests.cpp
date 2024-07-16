@@ -46,7 +46,7 @@ TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiterAtStart) {
     const char*  input = "/3,4";
     add(input);
 }
- TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiter) {
+ TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiterAtStart1) {
     const char*  input = "/2";
     add(input);
 }

@@ -42,3 +42,21 @@ TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiter) {
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
+TEST(StringCalculatorAddTests, ExpectSumWithCustomDelimiterAtStart) {
+    const char*  input = "/3,4";
+    add(input);
+}
+ 
+// Test case for handling negative numbers
+TEST(StringCalculatorAddTests, ExpectExceptionForNegativeNumbers) {
+    const char* input = "-2,3,-4";
+     add(input);
+}
+ 
+//Test case for empty string
+TEST(StringCalculatorAddTests, ExpectSumWithEmpptyString) {
+    int expectedresult = 0;
+    const char*  input = "";
+    int result = add(input);
+    ASSERT_EQ(result, expectedresult);
+}
